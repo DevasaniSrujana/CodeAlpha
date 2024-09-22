@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+.container {
+  background-color: rgb(212, 237, 109);
+}
+.home {
+  background-color: rgb(4, 47, 26);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.nav a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(255, 246, 246);
+}
+.nav a:hover {
+  color: rgb(255, 115, 181);
+  text-decoration: underline;
+}
+.nav .contact {
+  border: 1px solid black;
+  background-color: rgb(255, 115, 181);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(4, 47, 26);
+}
+#home {
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+#home .text {
+  color: rgb(255, 246, 246);
+  font-size: 40px;
+  padding: 10px;
+}
+#home .text span {
+  color: rgb(255, 115, 181);
+}
+#about {
+  width: 100%;
+  background-color: rgb(255, 115, 181);
+  min-height: 80vh;
+}
+#about .caption {
+  color: rgb(255, 246, 246);
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+  text-decoration: underline;
+  text-decoration-color: rgb(4, 47, 26);
+}
+#about .matter {
+  width: 60%;
+  margin: auto;
+  color: rgb(4, 47, 26);
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+}
+#about .education {
+  width: 80%;
+  margin: auto;
+  color: rgb(4, 47, 26);
+  margin-top: 40px;
+}
+#about .education .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: rgb(4, 47, 26);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 246, 246);
+}
+#about .education table {
+  width: 100%;
+  margin: 10px;
+  margin-top: 20px;
+}
+tr,
+th,
+td {
+  border: 2px solid white;
+  border-collapse: separate;
+  padding: 20px;
+  border-spacing: 5px;
+}
+th,
+td {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(4, 47, 26);
+}
+
+#skills {
+  background-color: rgb(212, 237, 109);
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+}
+#skills .heading {
+  color: rgb(255, 115, 181);
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+  text-decoration: underline;
+  text-decoration-color: rgb(4, 47, 26);
+}
+#skills .sets {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+#skills .sets span {
+  color: rgb(251, 6, 6);
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+}
+#skills .sets ul li,
+#skills .sets ol li {
+  color: rgb(4, 47, 26);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 5px;
+}
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(4, 47, 26);
+  border: 1px solid rgb(4, 47, 26);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+#projects .heading {
+  color: rgb(255, 246, 246);
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+#projects dl {
+  width: 60%;
+  padding: 10px;
+  margin: 5px;
+  margin: auto;
+}
+#projects dl dt {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 115, 181);
+}
+#projects dl dd {
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+}
+#contact {
+  background-color: rgb(4, 47, 26);
+  color: rgb(255, 246, 246);
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+  }
+  #skills .sets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
